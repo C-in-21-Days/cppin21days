@@ -1,0 +1,19 @@
+Quiz 
+1. What is the difference between an interpreter and a compiler?
+2. How do you compile the source code with your compiler?
+3. What does the linker do? 
+4. What are the steps in the normal development cycle?  
+
+
+ Exercises 
+1. Type in the following program and compile it. What error do you receive? 
+
+ include <iostream>
+ 
+ int main() 
+ { 
+ std::cout << “Hello World \n”; 
+ return 0; 
+ } 
+
+2. Fix the error in the program in Exercise 3 and recompile, link, and run it. What does it do?  

@@ -8,7 +8,7 @@ Quiz
  Exercises 
 1. Type in the following program and compile it. What error do you receive? 
 
- include <iostream>
+ include <iostream> // here there must be #include<iostream>
  
  int main() 
  { 
@@ -16,4 +16,4 @@ Quiz
  return 0; 
  } 
 
-2. Fix the error in the program in Exercise 3 and recompile, link, and run it. What does it do?  
+2. Fix the error in the program in Exercise 3 and recompile, link, and run it. What does it do?  // no errors

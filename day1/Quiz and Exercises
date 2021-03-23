@@ -1,8 +1,26 @@
 Quiz 
 1. What is the difference between an interpreter and a compiler?
+
+- An interpreter translates and executes a program as it reads it, turning the program
+instructions, or source code, directly into actions.
+- A compiler translates source code into an intermediary form. This step is called compiling, and it produces an object file. The compiler then invokes a linker, which combines
+the object file into an executable program.
+
+// до тук разбирам, че компилатора е по-бърз, но не разбирам следното: "Another advantage of compiled languages such as C++ is that you can distribute the executable program to people who don’t have the compiler. With an interpreted language,
+you must have the interpreter to run the program." //
+
+
 2. How do you compile the source code with your compiler?
+
+- I compile the sourse code (.cpp), which creates an object file (.obj or.o) and turning it into an executable program I will need to run the linker, which links the object file with libraries to produce an executable program.
+
 3. What does the linker do? 
-4. What are the steps in the normal development cycle?  
+
+- The linker is "linking" the object file to the libraries.
+
+4. What are the steps in the normal development cycle?
+
+- Create/edit a source code, compile, link,run. 
 
 
  Exercises 

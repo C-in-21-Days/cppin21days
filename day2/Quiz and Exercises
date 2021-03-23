@@ -1,0 +1,20 @@
+What is the difference between the compiler and the preprocessor?
+Why is the function main() special?
+What are the two types of comments, and how do they differ?
+Can comments be nested?
+Can comments be longer than one line?
+
+
+Write a program that writes “I love C++” to the console.
+Write the smallest program that can be compiled, linked, and run.
+
+BUG BUSTERS: Enter this program and compile it. Why does it fail? How can you fix it?
+#include <iostream>
+main()
+{
+std::cout << Is there a bug here?”;
+}
+
+Fix the bug in Exercise 3 and recompile, link, and run it.
+
+Modify Listing 2.7 to include a subtract function. Name this function Subtract() and use it in the same way that the Add() function was called. You should also pass the same values that were passed to the Add() function.

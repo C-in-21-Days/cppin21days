@@ -1,17 +1,28 @@
-//
+//Modify Listing 2.7 to include a subtract function. Name this function Subtract() and use it in the same way that the Add() function was called. You should also pass the same values that were passed to the Add() function.
 
 #include <iostream>
- int {
+
+int Subtract(int first, int second)
+{
+ std::cout << "In Subtract(), received " << first << " and " << second << std::endl;
+ 
+ return (first - second);
 }
-int {
-Add (int first, int second)
-std::cout << “In Add(), received “ << first << “ and ➥ “ << second << “\n”;
-return (first + second);
-}
-main()
-using std::cout; using std::cin;
-cout << “I’m in main()!\n”; int a, b, c;
-cout << “Enter two numbers: “; cin >> a;
+
+int main()
+{
+using std::cout;
+using std::cin;
+
+cout << "I’m in main()!\n"; 
+int a, b, c;
+cout << "Enter two numbers: "; 
+cin >> a;
 cin >> b;
-cout << “\nCalling Add()\n”; c=Add(a,b);
-cout << “\nBack in main().\n”; cout << “c was set to “ << c; cout << “\nExiting...\n\n”; return 0;
+cout << "\nCalling Subtract()\n"; 
+c=Subtract(a,b);
+cout << "c was set to " << c;
+
+
+return 0;
+}

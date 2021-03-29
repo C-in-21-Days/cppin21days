@@ -1,12 +1,42 @@
 What is the difference between the compiler and the preprocessor?
+The preprocessor reads through your source code, looking for lines that begin with the pound symbol (#) and acts on those lines before the compiler runs.
+The compiler, on the other hand, run to convert the preprocessed source code to object code.
+
 Why is the function main() special?
+This is the main function of the source code, which can call other functions. The main function should be with int type, so it should return a value, otherwise the function shoould be with type void.
+It called automatically, which is the main difference between main() and all the other functions, declared in the source code.
+
 What are the two types of comments, and how do they differ?
+/* */ - this commend will end when there is the second part of it - */
+// - this commend will be within the end of the line
+
 Can comments be nested?
+Yes, they can put // between /* */
+
 Can comments be longer than one line?
+yes, they can
 
 
 Write a program that writes “I love C++” to the console.
+
+#include <iostream>
+
+int main()
+{
+  std::cout<<"I love C++";
+  
+  return 0;
+}
+
+
 Write the smallest program that can be compiled, linked, and run.
+#include <iostream>
+
+int main()
+{ 
+  return 0;
+}
+
 
 BUG BUSTERS: Enter this program and compile it. Why does it fail? How can you fix it?
 #include <iostream>
@@ -15,6 +45,16 @@ main()
 std::cout << Is there a bug here?”;
 }
 
-Fix the bug in Exercise 3 and recompile, link, and run it.
+- the main function does not have a type. Here is the right program (compiled and run). Also, the " are missing.
+
+#include <iostream>
+int main()
+{
+std::cout << "Is there a bug here?";
+
+return 0;
+}
+
 
 Modify Listing 2.7 to include a subtract function. Name this function Subtract() and use it in the same way that the Add() function was called. You should also pass the same values that were passed to the Add() function.
+

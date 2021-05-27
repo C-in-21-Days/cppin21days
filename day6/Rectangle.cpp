@@ -43,8 +43,8 @@ class Rectangle
   
   int GetArea() const;
   
-  private
-    Point itsUpperLeft;
+  private:
+  Point itsUpperLeft;
   Point itsUpperRight;
   Point itsLowerLeft;
   Point itsLowerRight;
@@ -68,7 +68,34 @@ Rectangle::Rectangle(int top, int left, int right, int bottom) //accessor method
   
   itsUpperLeft.SetX(left);
   itsUpperLeft.SetY(top);
+  
   itsUpperRight.SetX(right);
-  ist
+  itsUpperRight.SetY(top);
+  
+  itsLowerLeft.SetX(left);
+  itsLowerLeft.SetY(bottom);
+  
+  itsLowerRight.SetY(right);
+  itsLowerRight.SetY(bottom);
+}
 
+int Rectangle::GetArea() const
+{
+    int Width = itsRight-itsLeft;
+    int Height = itsTop-itsBottom;
+    return (Width*Height);
+}
 
+int main()
+{
+    using namespace std;
+    Rectangle MyRectangle (100,20,50,80);
+    
+    int Area = MyRectangle.GetArea();
+    
+    cout<<"Area: "<<Area<<endl;
+    cout<<"Upper left  X coordinate: ";
+    cout<<MyRectangle.GetUpperLeft().GetX();
+    
+    return 0;
+}
